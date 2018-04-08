@@ -1,5 +1,12 @@
 
 
+
+/*Air Ride Editor v1.0.5
+ * by DIP
+ * thisispadding@gmail.com
+ * 4/7/18
+ */
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
@@ -22,7 +29,7 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 	 /**
 	 * 
 	 */
-	private static final long serialVersionUID = -5283293878142201906L;
+	private static final long serialVersionUID = -5283293878142201906L; 
 
 
 
@@ -30,23 +37,23 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 
 
 	public static void main(String[] args) {
-		 try {
-				UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
+		/* try {
+				UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel"); 
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 					| UnsupportedLookAndFeelException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-		 
-		 
-		 for(int i =0; i<1; ++i) {
+			}						/sexy theme. uses JTatoo library.
+		 */
+		 int i;
+		 for(i=0; i<1; ++i) {
 	    	
 	    		new filefind();
-		 }
+		 }  //will be
 	    	
 	    }
 	   
-    private JLabel l1 = new JLabel("HP");
+    private JLabel l1 = new JLabel("HP"); //param labels
     private JLabel l2 = new JLabel("Scale");
    
     private JLabel l3= new JLabel("Top Speed");
@@ -68,15 +75,15 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 
     
     private JLabel space = new JLabel("");
-    private JLabel tm1= new JLabel("Created By DIP");
+    private JLabel tm1= new JLabel("Created By DIP"); //<- a beautiful human being
     private JLabel tm2 = new JLabel("thisispadding@gmail.com");
     private JLabel main = new JLabel("Input numbers in the boxes");
-    private JFrame frame = new JFrame();
+    private JFrame frame = new JFrame();								//displayed text
     
-    public static File names;
+    public static File names; //filename
     
 
-    float parm1;
+    float parm1;		//floats
     float parm2;
     float parm3;
     float parm4;
@@ -92,7 +99,7 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
     float parm13;
     float parm14;
     
-   filefind fnd;
+  
  
    DefaultFormatter format = new DefaultFormatter();
    JFormattedTextField p1 = new JFormattedTextField(format);
@@ -100,7 +107,7 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
   
     JFormattedTextField p3 = new JFormattedTextField(format);
     JFormattedTextField p4 = new JFormattedTextField(format);
-    JFormattedTextField p5 = new JFormattedTextField(format);
+    JFormattedTextField p5 = new JFormattedTextField(format);		//value fields to display/edit
     JFormattedTextField p6 = new JFormattedTextField(format);
     JFormattedTextField p7 = new JFormattedTextField(format);
     JFormattedTextField p8 = new JFormattedTextField(format);
@@ -124,28 +131,22 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 
     public GUI() {
 
-    	  //DefaultFormatter format = (DefaultFormatter) p3.getFormatter();
-    	   format.setOverwriteMode(false);
+    	   format.setOverwriteMode(false);	//annoying bullcrap stopper
     	
-    	names = filefind.selectedfile;
+    	names = filefind.selectedfile; //getting name of file
         // the clickable button
-        JButton button = new JButton("Insert Values");
+        JButton button = new JButton("Insert Values");	
         JButton button2 = new JButton(new AbstractAction("Borked for now") {
         	
-        	 public void actionPerformed( ActionEvent e ) {
+        	 public void actionPerformed( ActionEvent e ) {	//button2's effect. trying to make a direct import button
         		//new iso();
              }
          });
         
         
         button.addActionListener(this);
-        
-     /*   p1.addActionListener(this);
-        p2.addActionListener(this);
-        p3.addActionListener(this);
-        p4.addActionListener(this);*/
-
-        String namesStr = names.getName();
+     
+        String namesStr = names.getName(); //display name in GUI
         JLabel name = new JLabel(namesStr);
        
   
@@ -163,19 +164,19 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
         p11.setColumns(11);
         p12.setColumns(12);
         p13.setColumns(13);
-        p14.setColumns(14);
+        p14.setColumns(14);		//this did something. i forgot what kek
 
 
         
-       RandomAccessFile hex = null;
+       RandomAccessFile hex = null; //this reads from offsets in the selectedfile
     		  try {
-				hex = new RandomAccessFile(names, "r");
+				hex = new RandomAccessFile(names, "r"); //the selected file is going to be "r"ead.
 				
-				 hex.seek(0x9C);
-				 parm1 = hex.readFloat();
+				 hex.seek(0x9C); //goes to offset for param
+				 parm1 = hex.readFloat(); //sets parm to float at offset
 				
 				
-				p1.setValue(parm1);
+				p1.setValue(parm1); //sets first textfield to parm1, for relative and easy editing
 				
 				
 				 hex.seek(0x38);
@@ -289,15 +290,14 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
         p1.addPropertyChangeListener("value", this);
       
         
-        //int parm1 = Integer.parseInt(p1.getText());
-        
-        // the panel with the button and text
-        JPanel panel = new JPanel();
+      
+    
+        JPanel panel = new JPanel(); //object to append all GUI elements to
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
         panel.setLayout(new GridLayout(0, 2, 3, 3));
       
        
-        panel.add(space);
+        panel.add(space);		//layout
         panel.add(tm1);
         panel.add(space);
         panel.add(space);
@@ -349,19 +349,19 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
       
         com.jtattoo.plaf.acryl.AcrylLookAndFeel.setTheme("Black", "INSERT YOUR LICENSE KEY HERE", "my company");
         
-        // select the Look and Feel
+        // more sexy theme
         
        
         // set up the frame and display it
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Air Ride Editor");
+        frame.setTitle("Air Ride Editor"); //name of window
         frame.pack();
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);  // *** this will center your app ***
 
        try {
-		hex.close();
+		hex.close(); //for rebuilding in GCR while program is open
 	} catch (IOException e1) {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
@@ -374,7 +374,7 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
     public void actionPerformed(ActionEvent e) {
     	
    
-    write(names);
+    write(names); //starts method "write", importing FIle "names"
 
       
     }
@@ -400,14 +400,14 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 		 try {
 			 
 			 
-			 raf = new RandomAccessFile(names, "rw");
+			 raf = new RandomAccessFile(names, "rw"); //reads and writes to/from file
 			 ///   System.out.println(names);
 				
 				
 				
 				
 				
-		        float p1rm  = Float.parseFloat(p1.getText());
+		        float p1rm  = Float.parseFloat(p1.getText());	//gets the float from the Text field
 		       float p2rm = Float.parseFloat(p2.getText());
 		       
 		        float p3rm  = Float.parseFloat(p3.getText());
@@ -434,8 +434,8 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 		        
 
 			
-			   raf.seek(0xc0);
-			   raf.writeFloat(p3rm);
+			   raf.seek(0xc0);	//goes to offset
+			   raf.writeFloat(p3rm); //writes the float stored from the text field
 			
 				
 			
@@ -491,11 +491,11 @@ implements ActionListener, PropertyChangeListener, ChangeListener {
 	   
 	   raf.seek(0x360);
 
-	   raf.writeUTF("hacked!");
+	 //  raf.writeUTF("hacked!"); //writes a signature to the file. might wanna disable that.
 
 	
 	
-		raf.close();
+		raf.close(); //close for rebuilding
 
 	
 	
