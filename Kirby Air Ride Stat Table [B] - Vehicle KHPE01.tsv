@@ -1,0 +1,125 @@
+Type	Offset [Attribute Table]	Offset 	hsdraw name	Effect	COMPACT	WARP	WINGED	SHADOW	BULK	SLICK	FORMULA	WAGON	ROCKET	SWERVE	TURBO	JET	HYDRA	DRAGOON		SCOOTER	REX	BIKE	ABILITY		FLIGHT	DEDEDE		VS DDD		FREE	HANDLE		_NORMAL	DISCLAIMER	VcWingKirby			outdated
+word	0x30	0	KirbySitBoneIndex	Bone that Kirby sits on	12	12	11	10	14	13	12	16	13	22	14	18	14	17		7	7	7	5		12	7		7		9	9		7		7			
+word	0x34	4	KirbyAdditionalBoneIndex		7	7	7	7	13	-1	7	7	-1	9	7	8	-1	7		-1	-1	-1	-1		7	-1		-1		-1	-1		-1		-1			
+float	0x38	8	ModelScaling	Model scaling	1	1	1	1	1	1	1	1	1.2	1	1	1.2	1	1		1	1.4	1	1		1	1		1		1	1		1					1.4
+float	0x3C	C	BaseOffense	Base offense, works in tandem with other offense stats (view comment)	0.7	1	0.7	0.8	2	0.6	0.8	1.3	1.15	0.8	1.25	1.4	4	1.2		0.7	1.8	1	0.8		1	1.4		5		1	1		1					1.6
+float	0x40	10	StartCameraDistance	Distance from the vehicle the camera starts at	1.7	1.7	2.1	1.9	4	3.5	2.5	1.9	2.5	2.2	1.7	1.7	3	6		1.1	1.1	1.1	1.1		1.7	1.1		3		1.7	1.7		1.1					
+float	0x44	14	Unknown 1	Vertical distance of the triangular indicator (angle pointer)	1.7	1.7	2.1	1.9	4	3.5	2.5	1.9	2.5	2.2	1.7	1.7	4	5		1.1	1.1	1.1	1.1		1.7	1.1		1.1		1.7	1.7		1.1					
+float	0x48	18	ShadowLengthFrontAndBehind	Length of the star's shadow (in front and behind)	0.3	0.3	0.3	0.3	0.3	0.3	0.3	1	0.3	0.3	0.3	0.3	0.3	0.3		1	1	1	1		0.3	1		1		0.3	0.3		1					
+float	0x4C	1C	ShadowLengthSides	Length of the star's shadow (at the sides of the star)	0.3	0.3	0.3	0.3	0.3	0.3	0.3	1	0.3	0.3	0.3	0.3	0.3	0.3		1	1	1	1		0.3	1		1		0.3	0.3		1					
+float	0x50	20	ShadowWidthTurning	Width of the star's shadow when turning (at the sides of the star)	0	0	0	0	0	0	0	0	0	0	0	0	0	0		0.8	0.8	0.8	0.8		0	0.8		0.8		0	0		0.8					
+	0x54	24	Unknown 2		0	0	0	0	0	0	0	0	0	0	0	0	0	0		0	0	0	0		0	0		0		0	0		0					
+float	0x58	28	Unknown 3		1.163	1.163	1.163	1.163	1.163	1.163	1.163	1.6	1.163	1.163	1.163	1.163	-0.25	-1		1.163	1.163	1.4	1.163		1.163	1.163		1.163		1.163	1.163		1.163					
+float	0x5C	2C	AnglePointerDistance	Horizontal distance of the triangular indicator (angle pointer)	4	4	4	4	4	4	4	4.5	4	4	4	4	4.8	3.7		4	4	4	4		4	4		4		4	4		4					
+float	0x60	30	Unknown 4		60	60	60	60	60	60	60	60	60	60	60	60	60	60		60	60	60	60		60	60		3		60	60		60					
+float	0x64	34	Unknown 5		40	40	40	40	40	40	40	40	40	40	40	40	40	40		40	40	40	40		40	40		2		40	40		40					
+float	0x68	38	HitKnockback	Knockback a star endures when hit.	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405	0.0405		0.0405	0.0405	0.0405	0.0405		0.0405	0.0405		0.0405		0.0405	0.0405		0.0405	NOTE: stars and wheels are				0.0405
+float	0x6C	3C	Unknown 6		0.6	0.6	0.6	0.6	0.8	0.6	0.4	0.6	0.6	0.6	0.6	45	30	0.6		0.6	0.6	0.6	0.6		0.6	0.6		0.8		0.6	0.6		0.01	different classes of vehicles				
+float	0x70	40	Unknown 7		0.162	0.162	0.162	0.162	0.162	0.162	0.162	0.162	0.162	0.162	0.162	150	0.162	0.162		0.162	0.162	0.162	0.162		0.462	0.1215		0		0.162	0.162		0.5	and the stats cannot be directly				
+float	0x74	44	Unknown 8		0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	0.02025	160	0.02025	0.02025		0.02025	0.02025	0.02025	0.02025		0.02025	0.02025		0		0.02025	0.02025		0.02	compared. more info soon.				
+float	0x78	48	MaximumAngularDisplacementPerfectLand	Maximum angular displacement at which you can perfect land	50	45	44	45	85	45	60	60	45	45	80	45	38	45		180	180	180	180		45	150		180		45	45		180					90
+float	0x7C	4C	Unknown 9		150	110	120	100	110	100	100	30	100	100	80	150	100	100		360	360	360	360		110	180		360		110	110		180					
+word	0x80	50	Unknown 10	Time to overheat in frames	120	180	200	80	600	360	220	600	120	240	120	160	1600	360		240	360	180	320		640	220		180		120	120		120					
+word	0x84	54	Unknown 11	Time to cool down after overheating in frames	60	60	60	60	60	60	60	180	120	60	60	60	60	60		60	180	60	60		60	60		60		60	60		60					
+float	0x88	58	Unknown 12	something to do with slipstream	2	2	2	2	1	2	2	2	2	2	2	2	2	2.5		1	1	1	1		2	1		1		2	2		1					
+float	0x8C	5C	Unknown 13	something to do with slipstream	3	3	3	3	1	3	3	3	3	3	3	3	3	3		3	3	3	3		3	3		3		3	3		3					
+word	0x90	60	Unknown 14	something to do with slipstream	80	80	80	80	5	80	80	80	80	80	80	80	80	80		80	80	80	80		80	80		1		80	80		80					
+float	0x94	64	Unknown 15	something to do with slipstream	0.3	0.3	0.3	0.3	0.1	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3	0.3		0.3	0.3	0.3	0.3		0.3	0.3		0.1		0.3	0.3		0.3					
+float	0x98	68	Unknown 16	A particle id, calling "EfKind_Starslip" for each star	370067	370067	370067	370067	370067	370067	370067	370067	370067	370067	370067	370067	370067	370067		370067	370067	370067	370067		370067	370067		370067		370067	370067		370067					
+float	0x9C	6C	BaseHP	Base HP	100	200	150	140	280	200	140	250	220	140	160	200	400	230		140	210	180	200		200	200		270		200	200		200					210
+float	0xA0	70	SizeOfHitbox	Size of hitbox surrounding the star itself	1.22	1.75	1.6	2	1.92	1.31	1.4	1.3	1.05	1.05	1.75	1.75	3.8	2.1		0.75	1.7	0.75	0.75		1.75	0.75		1		1.75	1.75		1					1.7
+float	0xA4	74	HitboxDistanceX	Distance the hitbox is from you on the x axis	2.45	2.62	2.9	2.8	3.1	2.8	3.32	3.15	2.5	2.6	2.62	2.62	4.8	3.85		1	3	1	1		2.62	1		1		2.62	2.62		1					3.075
+float	0xA8	78	Unknown 17	affects ram damage to players and boxes	10	20	16	26	30	18	20	22	18	10	20	20	60	20		20	20	20	20		20	20		20		20	20		20					
+float	0xAC	7C	Unknown 18	affects intensity of visual effects? (maybe wrong)	0.5	0.5	0.5	1	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.8	0.5		1	1	1	1		0.5	1		1		0.5	1		0.5					
+float	0xB0	80	Unknown 19	Knockback dealt on hit	16	20	20	80	20	20	20	20	20	20	20	20	60	20		20	40	20	20		20	20		20		20	20		20					
+float	0xB4	84	FlySpeedPerfectLand	Speed at which you fly when you perfect land (TEST MORE)	1	1	1	2	1	1	1	1	1	1	1	1	1.25	1		1	1	1	1		1	1		1		1	0.5		1					1.25
+float	0xB8	88	Unknown 20	Weapon and Copy Ability damage	1	1	1	1.3	1	1	1	0.9	1	1	1	1	1.8	1		1	1.5	1	1		1	1		1		1	1		1					
+float	0xBC	8C	BaseDefense	Base Defense	0	0.2	0.12	0.1	0.2	0.2	0.1	0.2	0.2	0.2	0.2	0.2	0.5	0.15		0.18	0.35	0.15	0.4		0.2	0.15		0.5		0.2	0.2		0.1					0.25
+float	0xC0	90	TopSpeedGround	Top speed on the ground	1.1745	1.6443	1.51875	1.296	1.62	1.76175	2.7945	1.701	1.0125	2.0331	1.863	1.3365	1.215	2.43		1.377	2.04525	1.7496	1.9035		1.6605	1.792125		0.9315		1.6605	1.6605		1.731375					1.75
+float	0xC4	94	SpeedMultiplierUpSlope	Speed increase on climbing up a slope	0.5	0.5	0.75	1.25	0.94	0	0.86	0.8	1	0.9	0.8	0.75	1	1		1	0.9	0.8	1		0.5	0.7		1		0.5	0.5		0.5					0.85
+float	0xC8	98	SpeedMultiplierDownSlope	Speed increase on riding down a slope	2	2	1.25	0.75	1	1.5	1.2	1.1	1	1.1	1.2	1.2	1	1		1	1.1	1.2	1		2	1		1		2	2		2					2.25
+float	0xCC	9C	ChargeSpeed	Charge speed (higher value = less time to fill the charge meter)	0.03	0.015	0.019	0.024	0.015	0.02	0.013	0	0.0092	0.03	0.001	0.01	0.0019	0.018		0.06	0.008	0.015	0.018		0.015	0.014		0.05		0.015	0.015		0.015					0.015
+float	0xD0	A0	ChargeSpeedTurning	Charge speed when turning	0.04	0.024	0.022	0.03	0.006	0.03	0.0145	0	0.00125	0.03	0.057	0.02	0.0019	0.028		0.06	0.014	0.024	0.027		0.024	0.02		0.05		0.024	0.024		0.024					0.012
+float	0xD4	A4	ChargeDepleteSpeed	How quickly charge depletes	0.33	1	1	1	0.0036	1	1	0.06	1	0.08	1	1	0.00012	1		1	1	1	1		1	1		1		0.33	0.33		1					0.5
+float	0xD8	A8	SpeedGainUnchargedBoost	Speed gain upon releasing an uncharged boost	0.01	0.01	0.01	0.01	0.0092	0.01	0.003	0	0.01	0.01	0.01	0.01	0	0.01		0	0.01	0.01	0.01		0.0102	0.01		0.01		0.01	0.01		0.01					0.003
+float	0xDC	AC	SpeedGainHalfChargedBoost	Speed gain upon releasing a ~half-charged boost	0.01	0.015	0.012	0.015	0.0092	0.01	0.0053	0	0.01	0.0216	0.015	0.015	0	0.015		0.02	0.015	0.015	0.015		0.01872	0.015		0.0173		0.016	0.015		0.015					0.05
+float	0xE0	B0	Unknown 21	Something with charge	0.01	0.021	0.015	0.0225	0.0092	0.01	0.0096	0	0.01	0.0288	0.02	0.0252	0	0.026		0.025	0.022	0.0245	0.0245		0.02756	0.0245		0.0259		0.02	0.02		0.02					
+float	0xE4	B4	SpeedGainFullChargedBoost	Speed gain upon releasing a fully-charged boost	0.04	0.036	0.03	0.0324	0.0092	0.02	0.018	0	0.01	0.036	0.03	0.0378	0	0.043		0.025	0.03	0.0357	0.0425		0.0432	0.0357		0.0339		0.03	0.03		0.03					0.02
+float	0xE8	B8	Unknown 22	Speed Gain Activated When Half Charge ?	0.07	0.0556	0.05	0.0486	0.0092	0.03	0.0278	0	0.01	0.0459	0.08	0.0577	0	0.063		0.025	0.043	0.052	0.0669		0.0693	0.056		0.0422		0.07	0.07		0.07					
+float	0xEC	BC	Unknown 23	Speed Gain Activated When Half Charge ?	0.09	0.0818	0.07	0.064	0.0092	0.04	0.0428	0	0.01	0.0613	0.1	0.0856	0	0.084		0.025	0.061	0.0725	0.0951		0.0952	0.08		0.0515		0.09	0.09		0.09					
+float	0xF0	C0	Unknown 24		0.1	0.1051	0.1	0.0847	0.0092	0.05	0.0593	0	0.01	0.0829	0.13	0.1171	0	0.115		0.025	0.08	0.096	0.1245		0.1254	0.1051		0.0595		0.11	0.11		0.11					
+float	0xF4	C4	SpeedGainThirdQuadBoost	Speed gain when releasing a boost when the boost meter is in the third quadrant (TEST)	0.1	0.135	0.11	0.1126	0.0092	0.06	0.08	0	0.01	0.1081	0.15	0.1559	0	0.0153		0.025	0.102	0.1187	0.1464		0.1566	0.1291		0.0692		0.135	0.135		0.135					0.135
+float	0xF8	C8	Unknown 25		0.1	0.16	0.123	0.1514	0.0092	0.07	0.1089	0	0.01	0.1081	0.17	0.2045	0.03	0.202		0.025	0.135	0.1368	0.164		0.1888	0.1508		0.0788		0.16	0.16		0.16					
+float	0xFC	CC	Unknown 26		0.12	0.18	0.14	0.1946	0.0092	0.08	0.1471	0	0.01	0.15	0.2	0.2414	0.03	0.268		0.025	0.178	0.1553	0.1804		0.2196	0.1646		0.0895		0.18	0.18		0.18					
+float	0x100	D0	Unknown 27		0.2	0.2	0.2	0.2441	0.0092	0.14	0.2218	0	3.3	0.1937	0.22	0.2694	0.03	0.37		0.025	0.311	0.19	0.19		0.25	0.1732		0.0987		0.2	0.2		0.2					
+float	0x104	D4	Unknown 28		0.4	0.6	0.4	0.6	0.25	0.8	0.07	1	1	0.28	0.6	0.6	0.6	0.6		1	0.3	0.6	0.6		0.6	0.6		0.9		0.6	0.6		0.6					
+float	0x108	D8	SpeedGainAnyBoost	Speed gain upon releasing any boost (TEST) Same across all vehicles.	1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					1
+float	0x10C	DC	SpeedGainSlidingBoost	Speed gain upon releasing a boost when sliding	2.1	2.1	2.1	2.1	2.1	2.1	2.1	2.1	1.4	2.1	2.1	2	2.1	2.3		2.1	0.8	2.1	2.1		2.1	2		1.3		2.1	2.1		2.1					2.1
+float	0x110	E0	TurnHandling	Ease of turn while moving normally	0.8	0.233	0.233	0.18	0.233	0.01	0.233	0.5	0.25	0.233	0.15	0.233	0.1	0.2		0.2	0.25	0.3	0.3		0.233	0.2		0.3		0.233	0.233		0.233					0.233
+float	0x114	E4	Unknown 29		0.4	0.03	0.22	0.002	0.233	0	0.233	0.2	0.25	0.233	0.02	0.03	0.03	0.233		0.05	0.15	0.25	0.07		0.03	0.1		0.01		0.03	0.03		0.06					
+float	0x118	E8	Unknown 30		0.8	0.5	0.5	0.5	0.5	0.4	0.5	0.8	0.5	0.5	0.5	0.5	0.5	0.5		0.2	0.15	0.15	0.15		0.5	0.05		0.15		0.5	0.5		0.5					
+float	0x11C	EC	Unknown 31		1.4	1	1	1	1	3	1	5	1	1	1	1.5	1	1		7	5	5	5		1	5		5		1	1		1					
+float	0x120	F0	Unknown 32		0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5		1.5	1.5	1.5	1.5		0.5	1.5		1.5		0.5	0.5		0.5					
+float	0x124	F4	Unknown 33		18	14	33	14	14	60	14	50	14	14	14	14	14	14		45	30	45	45		14	45		45		14	14		14					
+float	0x128	F8	Unknown 34		14	7	7	7	7	60	7	0	7	7	7	7	7	7		40	10	30	30		7	30		30		7	7		7					
+float	0x12C	FC	Unknown 35		2	2	2	2	2	2	2	0	2	2	2	2	0	2		40	30	40	40		2	40		40		2	2		2					
+float	0x130	100	Unknown 36		2	2	2	2	2	2	2	0	2	2	2	2	0	2		34	10	18	18		2	18		18		2	2		2					
+float	0x134	104	Unknown 37		0.3	0.8	1	0.2	1	1	1	0.7	0.05	1	1	0.4	5	0.8		0.9	1.15	1	1		0.8	0.3		1		0.8	0.8		1					
+float	0x138	108	Unknown 38		2	2.5	2	1.25	3.25	2	2.35	2.5	2	2	2.5	2.5	4.5	3.75		0.75	0.75	0.75	0.75		2.5	0.75		0.75		2.5	2.5		1.25					
+float	0x13C	10C	Unknown39	Invincibility Lollipop Damage	10	20	16	40	30	18	20	22	18	10	20	20	30	20		20	20	20	20		20	20		20		20	20		20					
+float	0x140	110	Unknown 40		1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					
+float	0x144	114	Unknown 41		20	20	20	40	20	20	20	20	20	20	20	20	20	20		20	20	20	20		20	20		20		20	20		20					
+float	0x148	118	Unknown42		1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					
+float	0x14C	11C	LandingHitboxSize	Size of Hitbox surrounding star when landing, or just after releasing charge	1.22	1.75	1.6	1	1.92	1.31	1.4	20	1.05	1.05	1.75	1.75	2.6	1.57		0.75	0.85	0.75	0.75		1.75	0.75		0.75		1.75	1.75		1					1.85
+float	0x150	120	LandingHitboxDistanceX	Distance the hitbox surrounding the star is from you on the x axis after ladning/after charge	2.45	2.62	2.9	1	3.1	2.8	3.32	3.15	2.5	2.6	2.62	2.62	4.6	2.8		1	1	1	1		2.62	1		1		2.62	2.62		1					3.075
+float	0x154	124	Unknown 43	Affects A-Tap damage against players	10	20	16	40	30	18	20	22	18	10	20	20	40	50		20	20	20	20		20	20		20		20	20		20					
+float	0x158	128	Unknown 44		1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					
+float	0x15C	12C	Unknown 45		20	20	20	40	20	20	20	20	20	20	20	20	20	20		20	20	20	20		20	20		20		20	20		20					
+float	0x160	130	Unknown 46		1	1	1	1	1	1	1	1	1	1	1	1	1.25	1		1	1	1	1		1	1		1		1	1		1					
+float	0x164	134	QuickSpinTornadoSize	Size of tornado effect when quick-spinning	1	1	1	1	2	1	1	1.5	1	1	1	1	2.5	2.5		1	2	1	1		1	1		1		1	1		1					1.25
+float	0x168	138	TurnSpeedOnSlope	Slipperyness on slopes (?)	0	0.005	0.04	0.005	0.03	0.04	0.012	0.006	0.04	0.04	0.005	0.005	0.005	0		0.03	0.008	0.01	0.01		0.005	0.012		0.01		0.005	0.005		0.005					0.012
+float	0x16C	13C	InitialTakeOffSpeed	Initial speed on takeoff	0.23085	0.2835	0.486	0.405	0.243	0.2835	0.1215	0.5265	0	0.243	0	3.0375	0.2025	0.2025		0	0	0	0		0.405	0		0		0.2835	0.2835		0.2835					1.5
+float	0x170	140	Unknown 47		0	0	0	0	0	0	0	0	0	0	0.567	0.3645	0	0		1.43	0.8	1.15	1.37		0	1.15		1.4		0	0		0					
+float	0x174	144	Unknown 48		0	0	0	0	0	0	0	0	0	0	0	0.6	0	0		2.5	3	2	2		0	3		2		0	0		0.5					
+float	0x178	148	Unknown49		0	0	0	0	0	0	0	0	0	0	0	0	0	0		0.5	0.5	0.5	0.5		0	0.5		0.5		0	0		0.5					
+float	0x17C	14C	StraightAirAcceleration	Acceleration in air while moving straight. "Maximum Flight Speed"	1.8468	1.863	2.04525	1.8225	1.701	1.944	2.2275	2.025	1.215	1.93185	1.62	1.5795	2.2275	3.645		2.4705	2.43	1.8225	1.8225		2.025	1.62		1.62		1.9035	1.9305		1.863					1.9035
+float	0x180	150	AirTurnSharpness	Sharpness of turning in air	0.3	0.4	0.6	0.7	0.005	0.3	0.1	0.6	3	0.2	0.01	0.25	0.8	1.5		0	0.05	0.05	0		0.6	0.05		0		0.4	0.4		0.4					0.4
+float	0x184	154	Unknown 50		0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5	0.5		0.5	0.5	0.5	0.5		0.5	0.2		0.5		0.5	0.5		0.5					
+float	0x188	158	Unknown 51		1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15	1.15		3	3	5	5		1.15	2		5		1.15	1.15		1.15					
+float	0x18C	15C	Unknown 52		2.3085	2.592	2.0655	4.779	4.86	1.05705	2.3085	6.48	2.43	2.3085	2.673	4.05	4.86	4.86		0.9315	3.24	2.025	2.025		2.592	2.835		4.05		2.592	2.52		2.43					
+float	0x190	160	FullChargeMidairSpeed	Speed of reaching full charge in midair	0.0025	0.0025	0.001	0.0005	0.0006	0.0025	0.0042	0	0	0.0025	0.0015	0.006	0	0.0005		0.0025	0.0025	0.0025	0.0025		0.0005	0.002		0.0025		0.0025	0.0025		0.0025					0.01
+float	0x194	164	Unknown 53	The Velocity of Kirby AFTER colliding into ground via worst landing	0.33	0.33	0.2	0.18	0.2	0.3	0.2	0.33	0.24	0.3	0.3	0.33	0.3	0.2		0.2	0.2	0.2	0.2		0.33	0.2		0.2		0.33	0.33		0.33					
+float	0x198	168	Unknown 54		2.3085	2.43	3.24	4.86	4.9005	1.215	2.268	6.885	2.835	2.349	2.187	3.645	4.86	4.86		8.1	8.1	8.1	8.1		2.43	8.1		8.1		2.43	2.43		0.5775					
+float	0x19C	16C	Unknown 55		3.24	3.645	7.29	7.29	6.075	2.025	2.673	7.695	3.645	2.835	2.673	6.075	6.075	5.67		8.505	8.505	8.505	8.505		3.645	8.505		8.505		3.645	3.645		1.155					
+float	0x1A0	170	Unknown 56		0.693	0.693	0.1	0.3	0.693	0.693	0.693	0.693	0.693	0.693	0.693	0.693	0.693	0.693		0.4	0.5	0.4	0.4		0.693	0.4		0.4		0.693	0.693		0.4					
+float	0x1A4	174	GlidePointUpSpeed	Speed of pointing nose upwards while gliding	1.145	1.145	1.145	0.8	1	1.145	1.145	2.2	1.145	2	3	3	1	1.145		1.5	1.5	105	1.5		1.4	1.5		1.5		1.145	1.145		1.145					1.145
+float	0x1A8	178	GlidePointUpAmount	Amount you can point upwards when gliding	80	80	40	60	18	80	80	80	80	80	35	80	26	80		40	30	40	40		60	40		40		80	80		80					80
+float	0x1AC	17C	GlidePointDownSpeed	Speed of pointing nose downwards while gliding	1.71	1.71	1.71	2	2	1.71	1.71	3.3	0.5	1.71	3	1.5	1.1	1.71		1.5	1.5	1.5	1.5		1.71	1.5		1.5		1.71	1.71		1.71					2.5
+float	0x1B0	180	GlidePointDownAmount	Amount you can point downwards while gliding	80	80	80	90	80	80	80	80	1.145	80	80	80	60	50		40	28	40	40		80	40		40		80	80		80					90
+float	0x1B4	184	Unknown 57		0.5	0.5	0.5	0.5	0.5	0.5	0.5	2.2	40	0.5	0.4	0.5	0.5	0.5		2	2	2	2		0.5	2		2		0.5	0.5		0.5					
+float	0x1B8	188	MidairUpSnapbackSpeed	Speed at which you snap back to facing forwards when letting go of down/up in midair	1.145	1.145	0.9	1.3	0	1.145	1.145	1.145	1.8	3	0	0	0	1.145		1	1	1	1		1.1	0.5		1		1.145	1.145		1.145					1.2
+float	0x1BC	18C	MidairTurnSpeedUp	Turn speed in midair while pointing upwards	80	60	80	70	20	20	30	10	40	20	20	70	40	40		45	30	45	45		80	45		45		60	60		60					65
+float	0x1C0	190	MidairTurnSpeedStraight	Turn speed in midair while pointing straight	3.9	1.8	1.5	1.5	0.5	3.43	1.4	0.8	1.8	2	1.8	1.8	0.9	1		1.7	0.5	1.7	1.7		1.5	1.4		1.4		1.8	1.8		1.8					1.45
+float	0x1C4	194	Unknown 58		0.5	0.5	0.4	0.4	0.5	0.5	0.5	0.5	0.4	1	0.5	0.2	0.5	0.3		0.5	0.25	0.5	0.5		0.4	0.5		0.5		0.5	0.5		0.5					
+float	0x1C8	198	MidairSideSnapbackSpeed	Speed at which you snap back to facing forwards when letting go of left/right in midair	0.5	0.45	0.38	0.24	0.5	1	3.43	0.65	0.35	0.6	0.2	0.1	0.13	1.145		0.3	0.2	0.3	0.3		0.38	0.3		0.3		0.45	0.45		0.45					0.3
+float	0x1CC	19C	Unknown 59	Effecting Kirby's Turning speed in air	0.018	0.02	0.012	0.046	0.1	0.055	0.04	0.07	0.02	0.2	0.15	0.03	0.04	40		0.035	0.025	0.035	0.035		0.015	0.035		0.035		0.02	0.02		0.02					
+float	0x1D0	1A0	Unknown 60		1.2	1.1	1	0.9	0.95	1.3	1	1.01	1	1.1	1.1	1	1.1	1		1.5	0.85	0.9	0.9		1.1	0.9		0.9		1.1	1.1		1.1					
+float	0x1D4	1A4	Unknown 61		1.7	1.7	1.7	1.7	1.6	1.7	0.8	0.9	0.9	1.7	1.2	1.4	1.7	0.3		1.7	1.5	1.7	1.7		1.7	1.7		1.7		1.7	1.7		1.7	NOTE: stars and wheels are				
+float	0x1D8	1A8	Unknown 62		1.2	1.2	1.2	1.2	1.1	1.2	1	1	1	1.4	1.2	1.2	1.2	0.3		1.2	1.1	1.2	1.2		1.2	1.2		1.2		1.2	1.2		1.2	different classes of vehicles				
+float	0x1DC	1AC	Unknown 63		0.693	0.693	0.1	0.3	0.693	0.693	0.693	0.693	0.693	0.693	0.693	0.693	0.2	0.04		0.693	0.5	0.693	0.693		0.693	0.693		0.693		0.693	0.693		0.693	and the stats cannot be directly				
+float	0x1E0	1B0	Unknown 64		1.215	1.0125	1.215	1.215	1.215	1.215	1.215	1.215	1.215	1.215	1.215	1.215	2.43	1.1		1.0125	1.0125	1.0125	1.0125		1.0125	1.0125		1.0125		1.215	1.215		1.0125	compared. more info soon.				
+float	0x1E4	1B4	Unknown 65		0.025	0.03	0.025	0.025	0.025	0.025	0.025	0.025	0.025	0.025	0.025	0.025	0.06	1.7		0.03	0.03	0.03	0.03		0.03	0.03		0.03		0.025	0.025		0.03					
+float	0x1E8	1B8	Unknown 66		1.2555	1.6605	1.539	1.4175	1.215	1.863	1.62	1.62	0.81	1.9035	2.025	1.3365	1.215	1.2		1.6605	1.215	1.6605	1.6605		1.6605	1.6605		1.6605		1.6605	1.6605		1.6605					
+float	0x1EC	1BC	Unknown 67		0.8	0.9	0.9	0.9	0	1	0.7	0.9	1.1	1	0.8	0.9	0.9	1		0.8	0.8	0.8	0.8		0.9	0.9		0.8		0.9	0.9		0.9					
+float	0x1F0	1C0	RailStationTurnSpeed	Turn speed at rail stations	1	1	0.9	0.9	1	1	1	0.9	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					1
+float	0x1F4	1C4	Unknown 68		0	0	0	0.02025	0	0	0.00891	0	0	0.1215	0	0	0	0		0	0.02025	0	0		0	0		0		0	0		0					
+	0x1F8	1C8	Unknown 69	nice	0	0	0	0	0	0	0	0	0	0	0	0	0	0		0	0	0	0		0	0		0		0	0		0					
+float	0x1FC	1CC	Unknown 70		0.5	0.5	0.5	0.4	0.5	0.025	0.4	0.5	0.1	0	0.5	0.5	0.5	0.5		0.5	0.5	0.5	0.5		0.5	0.5		0.7		0.5	0.5		0.5					
+float	0x200	1D0	Unknown 71		22	22	22	22	22	0.3	12	22	1	0	18	22	22	22		22	1	22	22		22	22		30		22	22		22					
+float	0x204	1D4	Unknown 72	Higher value = kirby jitters when holding A (test more?)	1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	1.2	1	1		1	1		1		1	1		1					
+float	0x208	1D8	Unknown 73		1	1	1	1	1	0	1	1	1	1	1	1	1	1		1	5	1	1		1	1		1		1	1		1					
+float	0x20C	1DC	Unknown 74		1	1	1	1	1	1	0.8	0.7	1	1	1	1	1	1		1	1	1	1		1	1		1		1	1		1					
+float	0x210	1E0	Unknown75		20	20	20	20	20	120	20	30	20	20	20	20	40	20		1	1	1	1		20	1		1		20	20		20					
+float	0x214	1E4	Unknown76		2.1	2.1	2.1	2.1	2.1	0	2.1	2.1	2.1	2.1	0.7	2.1	1	2.1		1	1	1	1		2.1	1		1		2.1	2.1		2.1					2.1
+float	0x218	1E8	Unknown77		0.7	0.7	0.7	0.7	0.7	0	0.7	0.7	0.7	0.7	1.2	0.7	1	0.7		1	1	1	1		0.7	1		1		0.7	0.7		0.7					0.7
+float	0x21C	1EC	Unknown78		1	1	1	1	1.5	1	1	1.25	1	1	1	1	2	1.5		1	1.5	1	1		1	1		1		1	1		1					
